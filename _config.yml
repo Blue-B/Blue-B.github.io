@@ -29,7 +29,7 @@ github:
   username: Blue-B # change to your GitHub username
 
 twitter:
-  username:  # change to your Twitter username
+  username: eFIDvZtKaeXqD2y
 
 social:
   # Change to your full name.
@@ -38,10 +38,10 @@ social:
   email: yousin_ms@naver.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://newstroyblog.tistory.com # change to your Twitter homepage
+    # - https://newstroyblog.tistory.com # change to your Twitter homepage
     - https://github.com/Blue-B # change to your GitHub homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://newstroyblog.tistory.com
     # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
@@ -98,7 +98,8 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/assets/img/profile/me.png'
+avatar: '/assets/img/profile/me.jpg'
+# UVNCeGRXbGxkQ0JoYm1RZ1luSnBaMmgwSUd4cGJXbHVZV3dnYzNCaFkyVWdkMmwwYUNCaElIQmxZV05sWm5Wc0lHRjBiVzl6Y0dobGNtVWdMQ0JtWldGMGRYSnBibWNnWVc0Z2IzQmxiaUJ6YTNrZ2QybDBhQ0JzYVdkb2RDQmpiRzkxWkhNZ0xpQlVhR1VnYzJWMGRHbHVaeUJwY3lCeVpXRnNhWE4wYVdNZ1lXNWtJR2R5YjNWdVpHVmtJQ3dnY21WelpXMWliR2x1WnlCaGJpQmxiWEIwZVNCemRXSjFjbUpoYmlCd1lYSnJhVzVuSUd4dmRDd2dZU0J4ZFdsbGRDQm9ZV3hzZDJGNUlDd2diM0lnWVc0Z1lXSmhibVJ2Ym1Wa0lHOW1abWxqWlNCemNHRmpaU0IzYVhSb0lHTnNaV0Z1SUd4cGJtVnpJR0Z1WkNCemIyWjBJR3hwWjJoMGFXNW5JQzRnVkdobElHRnlaV0VnWm1WbGJITWdabkpsYzJnZ1lXNWtJR05oYkcwZ0xDQjNhWFJvSUc1dklIQmxiM0JzWlNCd2NtVnpaVzUwSUN3Z1lXNWtJSE4xWW5Sc1pTQmtaWFJoYVd4eklHeHBhMlVnY21WbWJHVmpkR2wyWlNCM2FXNWtiM2R6SUN3Z1kyOXVZM0psZEdVZ2RHVjRkSFZ5WlhNZ0xDQnZjaUJ6YVcxd2JHVWdZbVZ1WTJobGN5QmhaR1FnZEc4Z2RHaGxJR2R5YjNWdVpHVmtJSGxsZENCemJHbG5hSFJzZVNCemRYSnlaV0ZzSUdGdFltbGhibU5sTGc9PQ==
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
