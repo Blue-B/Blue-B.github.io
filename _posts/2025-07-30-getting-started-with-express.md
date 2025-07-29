@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 date: 2025-07-30
 last_modified_at: 2025-07-30
-
+mermaid: true
 ---
 
 ## 들어가며
