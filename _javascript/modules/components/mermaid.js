@@ -49,7 +49,7 @@ export function loadMermaid() {
     theme: initTheme
   };
 
-  const basicList = document.getElementsByClassName('language-mermaid');
+  const basicList = document.getElementsByClassName('language-mermaid-init');
   [...basicList].forEach(setNode);
 
   mermaid.initialize(mermaidConf);
