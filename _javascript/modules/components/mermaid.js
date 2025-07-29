@@ -49,22 +49,37 @@ export function loadMermaid() {
     theme: initTheme
   };
 
+  // 이미 처리된 요소들을 추적하기 위한 Set
+  const processedNodes = new Set();
+
   const basicList = document.getElementsByClassName('language-mermaid-init');
-  [...basicList].forEach(setNode);
+  [...basicList].forEach((elem) => {
+    if (!processedNodes.has(elem)) {
+      setNode(elem);
+      processedNodes.add(elem);
+    }
+  });
 
   // Also handle regular mermaid blocks
   const mermaidList = document.getElementsByClassName('language-mermaid');
-  [...mermaidList].forEach(setNode);
+  [...mermaidList].forEach((elem) => {
+    if (!processedNodes.has(elem)) {
+      setNode(elem);
+      processedNodes.add(elem);
+    }
+  });
 
   // Additional check for mermaid code blocks that might not have the language-mermaid class
   const allCodeBlocks = document.querySelectorAll('pre code');
   allCodeBlocks.forEach((codeBlock) => {
-    if (codeBlock.textContent.trim().startsWith('graph') || 
-        codeBlock.textContent.trim().startsWith('sequenceDiagram') ||
-        codeBlock.textContent.trim().startsWith('flowchart') ||
-        codeBlock.textContent.trim().startsWith('classDiagram')) {
+    if (!processedNodes.has(codeBlock) &&
+        (codeBlock.textContent.trim().startsWith('graph') || 
+         codeBlock.textContent.trim().startsWith('sequenceDiagram') ||
+         codeBlock.textContent.trim().startsWith('flowchart') ||
+         codeBlock.textContent.trim().startsWith('classDiagram'))) {
       codeBlock.classList.add('language-mermaid');
       setNode(codeBlock);
+      processedNodes.add(codeBlock);
     }
   });
 
