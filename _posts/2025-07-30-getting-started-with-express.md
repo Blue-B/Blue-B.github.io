@@ -91,7 +91,7 @@ node index.js
 
 위 코드는 어떻게 동작하는 걸까요?
 
-{% mermaid %}
+```mermaid
 graph TD
     A[Client: 웹 브라우저] -- HTTP GET 요청 --> B(Node.js HTTP 서버);
     B -- 요청 전달 --> C{Express 애플리케이션};
@@ -99,7 +99,7 @@ graph TD
     D -- 일치! --> E[콜백 함수 실행<br/>(req, res) => { ... }];
     E -- res.send() 호출 --> F[응답 생성];
     F -- HTTP 응답 --> A;
-{% endmermaid %}
+```
 
 1.  클라이언트(브라우저)가 `http://localhost:3000` 으로 **HTTP GET 요청**을 보냅니다.
 2.  Node.js에 내장된 HTTP 서버가 이 요청을 받아 Express 애플리케이션에 전달합니다.
