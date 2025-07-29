@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 date: 2025-07-30
 last_modified_at: 2025-07-30
-mermaid:true
+
 ---
 
 ## 들어가며
@@ -94,12 +94,12 @@ node index.js
 
 ```mermaid
 graph TD
-    A[Client: 웹 브라우저] -- HTTP GET 요청 --> B(Node.js HTTP 서버);
-    B -- 요청 전달 --> C{Express 애플리케이션};
-    C -- 라우팅 규칙 확인 --> D{app.get('/', callback)};
-    D -- 일치! --> E[콜백 함수 실행<br/>(req, res) => { ... }];
-    E -- res.send() 호출 --> F[응답 생성];
-    F -- HTTP 응답 --> A;
+    A[Client Browser] --> B[Node.js HTTP Server]
+    B --> C[Express Application]
+    C --> D[Route Matching]
+    D --> E[Callback Function Execution]
+    E --> F[Response Generation]
+    F --> A
 ```
 
 1.  클라이언트(브라우저)가 `http://localhost:3000` 으로 **HTTP GET 요청**을 보냅니다.
