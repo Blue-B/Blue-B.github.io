@@ -94,11 +94,11 @@ node index.js
 
 ```mermaid
 graph TD
-    A[Client Browser] --> B[Node.js HTTP Server]
-    B --> C[Express Application]
-    C --> D[Route Matching]
-    D --> E[Callback Function Execution]
-    E --> F[Response Generation]
+    A[클라이언트 브라우저] --> B[Node.js HTTP 서버]
+    B --> C[Express 애플리케이션]
+    C --> D[라우팅 규칙 확인]
+    D --> E[콜백 함수 실행]
+    E --> F[응답 생성]
     F --> A
 ```
 
