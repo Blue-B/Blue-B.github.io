@@ -52,6 +52,10 @@ export function loadMermaid() {
   const basicList = document.getElementsByClassName('language-mermaid-init');
   [...basicList].forEach(setNode);
 
+  // Also handle regular mermaid blocks
+  const mermaidList = document.getElementsByClassName('language-mermaid');
+  [...mermaidList].forEach(setNode);
+
   mermaid.initialize(mermaidConf);
 
   if (Theme.switchable) {
